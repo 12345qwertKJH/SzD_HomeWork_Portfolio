@@ -1,0 +1,96 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  display: flex;   
+  justify-content: center;
+  align-items: top;
+  min-height: 100vh;
+  background: #000;
+}
+.loader
+{
+  position: center;
+  width: 375px;
+  height: 375px;
+  border-radius: 1000%;
+  overflow: hidden;
+  transform: rotate(100deg);
+}
+.loader span
+{
+  position: absolute;  
+  top: calc(18.75px * var(--i));
+  left: calc(18.75px * var(--i));
+  right: calc(18.75px * var(--i));
+  bottom: calc(18.75px * var(--i));
+  border: 18.75px solid #0b0b0b;
+  border-top: 18.75px solid #8fb9;
+  border-left: 18.75px solid #37f9;
+  border-right: 18.75px solid #5b3b9b;
+  border-bottom: 18.75px solid #8fb9;
+  border-radius: 50%;
+  animation: animate 1s alternate ease-in-out infinite;
+  filter: hue-rotate(calc(17deg * var(--i)));
+  animation-delay: calc(-0.08s * var(--i));
+}
+@keyframes animate
+{
+  0%  
+  {
+    transform: rotate(140deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+        
+  }
+}
+.content
+{
+ position: center;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.content .textbox
+{
+ position: center;
+ max-width: 500px;
+}
+.content .textbox h2
+{
+ color:#7D0552 ;
+ font-size: 4em;
+ line-height: 1em;
+ font-weight: 100;
+ 
+}
+
+.content .textbox p
+{
+ color: #6960EC ;
+ font-size: 2.5em;
+ line-height: 1.2em;
+ font-weight: 100;
+}
+
+.content .textbox f
+{
+ color: #4CC417 ;
+ font-size: 2.5em;
+ line-height: 0.9em;
+ font-weight: 100;
+}
+.content .textbox g
+{
+ color: #BCC6CC;
+ font-size: 2.5em;
+ line-height: 0.9em;
+ font-weight: 100;
+}

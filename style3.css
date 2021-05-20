@@ -1,0 +1,84 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  display: flex;   
+  justify-content: center;
+  align-items: top;
+  min-height: 100vh;
+  background: #000;
+}
+.loaderr
+{
+  position: center;
+  width: 375px;
+  height: 375px;
+  border-radius: 200%;
+  overflow: hidden;
+  transform: rotate(350deg);
+}
+.loaderr span
+{
+  position: absolute;  
+  top: calc(18.75px * var(--i));
+  left: calc(18.75px * var(--i));
+  right: calc(18.75px * var(--i));
+  bottom: calc(18.75px * var(--i));
+  border: 18.75px solid #9F000F;
+  border-top: 18.75px solid #347C2C;
+  border-left: 18.75px solid #00FFFF;
+  border-right: 18.75px solid #C85A17;
+  border-bottom: 18.75px solid #4CC417;
+  animation: animate 1s alternate ease-in-out infinite;
+  filter: hue-rotate(calc(50deg * var(--i)));
+  animation-delay: calc(-0.08s * var(--i));
+}
+@keyframes animate
+{
+  74%  
+  {
+    transform: rotate(-27deg);
+  }
+  67%
+  {
+    transform: rotate(-82deg);
+        
+  }
+
+}
+.imgBox2
+{
+  position: center;
+    
+}
+.content .textbox
+{
+ position: center;
+ max-width: 500px;
+}
+.content .textbox h2
+{
+ color: orange;
+ font-size: 2.3em;
+ line-height: 1.2em;
+ font-weight: 200;
+}
+.content .textbox c
+{
+ color: darkred;
+ font-size: 1.5em;
+ line-height: 3.5em;
+ font-weight: 100;
+ }   
+.zene
+{
+ position: center;
+ height: 30px;
+}
+.lila_class{
+  color: orange;
+}
